@@ -89,7 +89,7 @@
     feetLabel.text = @"Feet: ";
     timeLabel.text = @"Time: ";
     feetValue.text = dict[@"feet"];
-    timeValue.text = dict[@"time"];
+    timeValue.text = [self convertTimeFormat:dict[@"time"]];
     
     return cell;
 }
@@ -136,6 +136,15 @@
          });
      }];
     [dataTask resume];
+}
+
+-(NSString*)convertTimeFormat: (NSString *)original{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc]init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss Z"];
+    NSDate *date = [dateFormatter dateFromString:original];
+    [dateFormatter setDateFormat:@"MM/dd/yy, h:mm a"];
+    NSString *dateString = [dateFormatter stringFromDate:date];
+    return dateString;
 }
 
 @end
