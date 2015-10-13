@@ -8,6 +8,7 @@
 
 #import "StateListViewController.h"
 #import "StationListViewController.h"
+#import "Constants.h"
 
 @interface StateListViewController() <NSURLSessionDelegate>
 
@@ -27,14 +28,13 @@
         session = [NSURLSession sessionWithConfiguration:config
                                                      delegate:self
                                                 delegateQueue:nil];
-        
     }
     return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self httpGet: @"http://oceancandy.clank.us/stations"];
+    [self httpGet: OCEAN_CANDY_BASE_URL];
     
     [self.tableView registerClass:[UITableViewCell class]
            forCellReuseIdentifier:@"UITableViewCell"];

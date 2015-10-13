@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4CEC57E3-36B4-4BC0-AF3A-C033F2B638D6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>OceanCandy</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>89D79134C99E2DC50B411907E69CC90738D4948D</key>
+		<string>https://github.com/misandao2012/OceanCandy_iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>OceanCandy.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>89D79134C99E2DC50B411907E69CC90738D4948D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/misandao2012/OceanCandy_iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>89D79134C99E2DC50B411907E69CC90738D4948D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>89D79134C99E2DC50B411907E69CC90738D4948D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>OceanCandy</string>
+		</dict>
+	</array>
+</dict>
+</plist>

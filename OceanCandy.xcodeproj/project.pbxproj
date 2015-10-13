@@ -17,6 +17,7 @@
 		7F9B05DA1BCC5B6000414E8A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F9B05D81BCC5B6000414E8A /* LaunchScreen.xib */; };
 		7F9B05E61BCC5B6000414E8A /* OceanCandyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9B05E51BCC5B6000414E8A /* OceanCandyTests.m */; };
 		7F9B05F11BCC5BBF00414E8A /* StateListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F9B05F01BCC5BBF00414E8A /* StateListViewController.m */; };
+		7FE40F551BCD968F005D6A1A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7FE40F541BCD968F005D6A1A /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		7F9B05E51BCC5B6000414E8A /* OceanCandyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OceanCandyTests.m; sourceTree = "<group>"; };
 		7F9B05EF1BCC5BBF00414E8A /* StateListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateListViewController.h; sourceTree = "<group>"; };
 		7F9B05F01BCC5BBF00414E8A /* StateListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateListViewController.m; sourceTree = "<group>"; };
+		7FE40F541BCD968F005D6A1A /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		7FE40F561BCD99B0005D6A1A /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,7 @@
 			children = (
 				7F9B05CD1BCC5B6000414E8A /* AppDelegate.h */,
 				7F9B05CE1BCC5B6000414E8A /* AppDelegate.m */,
+				7FE40F561BCD99B0005D6A1A /* Constants.h */,
 				7F9B05EF1BCC5BBF00414E8A /* StateListViewController.h */,
 				7F9B05F01BCC5BBF00414E8A /* StateListViewController.m */,
 				7F071A371BCC826700DE094B /* StationListViewController.h */,
@@ -113,6 +117,7 @@
 			children = (
 				7F9B05CA1BCC5B6000414E8A /* Info.plist */,
 				7F9B05CB1BCC5B6000414E8A /* main.m */,
+				7FE40F541BCD968F005D6A1A /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -215,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F9B05D51BCC5B6000414E8A /* Main.storyboard in Resources */,
+				7FE40F551BCD968F005D6A1A /* Localizable.strings in Resources */,
 				7F9B05DA1BCC5B6000414E8A /* LaunchScreen.xib in Resources */,
 				7F9B05D71BCC5B6000414E8A /* Images.xcassets in Resources */,
 			);

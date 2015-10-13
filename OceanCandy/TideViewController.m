@@ -7,6 +7,7 @@
 //
 
 #import "TideViewController.h"
+#import "Constants.h"
 
 @interface TideViewController () {}
 
@@ -29,7 +30,6 @@
     return self;
 }
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     CGRect bounds = CGRectMake(0,0,[UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height);
@@ -37,7 +37,7 @@
     tideTableView.delegate = self;
     tideTableView.dataSource = self;
     [self.view addSubview: tideTableView];
-    NSString *requestString = [NSString stringWithFormat:@"http://oceancandy.clank.us/stations/%@", stationId];
+    NSString *requestString = [NSString stringWithFormat:@"%@/%@", OCEAN_CANDY_BASE_URL,stationId];
     [self httpGet: requestString];
     
 }
@@ -86,8 +86,8 @@
     } else {
         dict = highTideArray[indexPath.row];
     }
-    feetLabel.text = @"Feet: ";
-    timeLabel.text = @"Time: ";
+    feetLabel.text = NSLocalizedString(@"Feet_lbl",nil);
+    timeLabel.text = NSLocalizedString(@"Time_lbl",nil);
     feetValue.text = dict[@"feet"];
     timeValue.text = [self convertTimeFormat:dict[@"time"]];
     
@@ -108,9 +108,9 @@
     headerView.backgroundColor = [UIColor whiteColor];
     UILabel *headingLabel = [[UILabel alloc]initWithFrame:CGRectMake(10, 0, [UIScreen mainScreen].bounds.size.width, 50)];
     if(section == 0){
-        headingLabel.text = @"Low Tides:";
+        headingLabel.text = NSLocalizedString(@"Low_Tides_lbl",nil);
     } else {
-        headingLabel.text = @"High Tides:";
+        headingLabel.text = NSLocalizedString(@"High_Tides_lbl",nil);
     }
     [headerView addSubview:headingLabel];
     return headerView;
